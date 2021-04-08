@@ -1,0 +1,102 @@
+/* General styles and structure, fonts */
+html,
+body {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Bodoni Moda", serif;
+}
+
+h2 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* Headings */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Header and navigation */
+.navbar,
+header {
+  background: rgb(78, 49, 128);
+  min-height: 75px;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.logo-img {
+  max-width: 200px;
+}
+
+/* Banner Section */
+
+.banner,
+.jumbotron {
+  background-image: url("/img/pexels-karolina-grabowska-4476375.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-inner {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Services Section */
+
+/* About Section */
+
+#about {
+  background: rgba(78, 49, 128, 0.5);
+}
+
+/* Contact Section */
+
+/* Footer */
+
+.site-footer {
+  background: rgb(78, 49, 128);
+}
+
+#footer-nav a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#dev-credit {
+  background: rgba(78, 49, 128, 0.5);
+  padding-bottom: 30px;
+}
+
+#dev-credit a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#dev-name {
+  font-family: "Lobster", cursive;
+}
