@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <!--Fonts-->
@@ -39,15 +40,15 @@
                             Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">
+                        <a class="nav-link" id="navLink" href="#services">
                             Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">
+                        <a class="nav-link" id="navLink" href="#about">
                             About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">
+                        <a class="nav-link" id="navLink" href="#contact">
                             Contact</a>
                     </li>
                 </ul>
@@ -60,9 +61,9 @@
         <div class="main container-fluid">
 
             <!--Banner section-->
-            <section class="row jumbotron jumbotron-fluid p-0 my-0">
+            <section class="row jumbotron jumbotron-fluid p-0 my-0 shadow">
                 <div class="banner">
-                    <div class="col banner-inner rounded p-4 text-center">
+                    <div class="col banner-inner rounded p-4 text-center animate__animated animate__fadeIn">
                         <p style="font-size:28px;font-weight:800">
                             Bringing Quickbooks&#174; Certified service <br />to all areas in Idaho!
                         </p>
@@ -73,71 +74,78 @@
 
             <!--Services Section-->
             <section class="row row-content p-3" id="services">
-                <div class="col-12 text-center my-3">
-                    <h2>Services</h2>
-                    <hr />
-                    <h3>What We Can Do For You</h3>
-                </div>
-                <!-- List group -->
-                <div class="row mx-auto" id="servicesTabs">
+                <div class="services-wrapper container-fluid">
+                    <div class="col-12 text-center my-3">
+                        <h2>Services</h2>
+                        <hr />
+                        <h3>What We Can Do For You</h3>
+                    </div>
+                    <!-- List group -->
+                    <div class="row mx-auto" id="servicesTabs">
 
-                    <div class="col-xs-12 col-md">
-                        <div class="list-group" id="myList" role="tablist">
-                            <a class="list-group-item list-group-item-action active noZensmooth" data-toggle="list"
-                                href="#taxes" role="tab">Taxes</a>
-                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
-                                href="#quickbooks" role="tab">Quickbooks</a>
-                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
-                                href="#maintenance" role="tab">Maintenance</a>
-                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
-                                href="#business" role="tab">General Business</a>
+                        <div class="col-xs-12 col-md">
+                            <div class="list-group" id="myList" role="tablist">
+                                <a class="list-group-item list-group-item-action active" data-toggle="list"
+                                    href="#taxes" role="tab">Taxes</a>
+                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#quickbooks"
+                                    role="tab">Quickbooks</a>
+                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#maintenance"
+                                    role="tab">Maintenance</a>
+                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#business"
+                                    role="tab">General Business</a>
 
+                            </div>
+                        </div>
+
+                        <!-- Tab panes -->
+                        <div class="col-xs-12 col-md mt-2" id="servicesTabsDiv">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="taxes" role="tabpanel">
+                                    <ul>
+                                        <li>Federal and state filing reports</li>
+                                        <li>Tax returns for personal and business preparation</li>
+                                        <li>Payroll Processing with Tax reporting 941, 940, W-2’s, W-3,
+                                            Processing 1099’s and l096.</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="quickbooks" role="tabpanel">
+                                    <ul>
+                                        <li>New QuickBooks company file setup</li>
+                                        <li>Online QuickBooks</li>
+                                        <li>Quickbooks certified service!</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="maintenance" role="tabpanel">
+                                    <ul>
+                                        <li>Cleanup of your bookkeeping</li>
+                                        <li>Monthly Maintenance</li>
+                                        <li>Monthly Bank/Credit Card Reconciliations</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="business" role="tabpanel">
+                                    <ul>
+                                        <li>Payroll calculation</li>
+                                        <li>Asset Management (Accumulated Depreciation)</li>
+                                        <li>Prepare Financial Statements Income Statement, Balance Sheet Monthly,
+                                            Quarterly,
+                                            and
+                                            Year-end reporting</li>
+                                        <li>Assist with new company set up and filing</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <hr />
+                            <h3 class="text-center mt-5 w3-animate-opacity">Call <a
+                                    style="color:rgba(15, 14, 14, 0.459);" href="tel:2086060428">(208)606-0428</a> to
+                                get
+                                started!
+                            </h3>
                         </div>
                     </div>
-
-                    <!-- Tab panes -->
-                    <div class="col-xs-12 col-md mt-2">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="taxes" role="tabpanel">
-                                <ul>
-                                    <li>Federal and state filing reports</li>
-                                    <li>Tax returns for personal and business preparation</li>
-                                    <li>Payroll Processing with Tax reporting 941, 940, W-2’s, W-3,
-                                        Processing 1099’s and l096.</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" id="quickbooks" role="tabpanel">
-                                <ul>
-                                    <li>New QuickBooks company file setup</li>
-                                    <li>Online QuickBooks</li>
-                                    <li>Quickbooks certified service!</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" id="maintenance" role="tabpanel">
-                                <ul>
-                                    <li>Cleanup of your bookkeeping</li>
-                                    <li>Monthly Maintenance</li>
-                                    <li>Monthly Bank/Credit Card Reconciliations</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" id="business" role="tabpanel">
-                                <ul>
-                                    <li>Payroll calculation</li>
-                                    <li>Asset Management (Accumulated Depreciation)</li>
-                                    <li>Prepare Financial Statements Income Statement, Balance Sheet Monthly, Quarterly,
-                                        and
-                                        Year-end reporting</li>
-                                    <li>Assist with new company set up and filing</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <script>
-                        $(function () {
-                            $('#myList a:last-child').tab('show')
-                        })
-                    </script>
                 </div>
             </section>
 
@@ -146,10 +154,10 @@
                 <div class="col-12 text-center my-3">
                     <h2>About BTR</h2>
                     <hr />
-                    <h3 class="text-center">BTR values your financial success</h3>
+                    <h3 class="text-center">Bookkeeping That's Reliable values your financial success</h3>
                 </div>
                 <div class="row mx-auto" id="about-content">
-                    <div class="col-md-8 col-lg-5 col-xl-4 mx-auto" id="about-boxes">
+                    <div class="col-md-5 col-xl-4 mx-auto my-auto" id="about-boxes">
                         <div class="bg-light rounded p-3 mb-4 text-right" id="ab-1">
                             <div class="media">
                                 <i class="fa fa-calendar"> </i>
@@ -183,20 +191,29 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-2 mr-auto">
-                        <div class="card mt-3">
-                            <img src="img/ingrid.jpg" class="img-thumbnail card-img-top" alt="Picture of Ingrid" />
-                            <h3 class="card-header">Ingrid</h3>
-                            <div class="card-body">
-                                I have been doing bookkeeping for over 20 years in my own businesses. I am a Certified
-                                by Quickbooks. I work will all
-                                different agencies across the country and can provide the training you need to keep
+                    <div class=" col-md-5 col-xl-4 mr-auto">
+                        <div class="card mt-3 w3-animate-right" style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                            <img src="img/ingrid.jpg" class="img-thumbnail card-img-top w-50 mt-3 mx-auto"
+                                alt="Picture of Ingrid" />
+                            <h3 class="card-header text-center" style="background:white;border:none">Meet
+                                Ingrid
+                            </h3>
+                            <div class="card-body text-center">
+                                I have been doing bookkeeping for over 20 years independently! <br />I work will
+                                all
+                                different agencies across the country and can provide the training you need to
+                                keep
                                 things organized.
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h3 class="text-center mt-5 text-white w3-animate-opacity">Call <a
+                                style="color:rgba(15, 14, 14, 0.459);" href="tel:2086060428">(208)606-0428</a> to get
+                            started!
+                        </h3>
                     </div>
                 </div>
             </section>
@@ -206,7 +223,11 @@
                 <div class="col-12 my-3 mx-auto">
                     <h2 class="text-center">Interested in getting your company or personal finances in order?</h2>
                     <hr />
-                    <h3 class="text-center">Use the form below to contact us!</h3>
+                    <h3 class="text-center mt-5">Call <a style="color:rgba(15, 14, 14, 0.459);"
+                            href="tel:2086060428">(208)606-0428</a> to get
+                        started!
+                    </h3>
+                    <h3 class="text-center">Or, use the form below to contact us!</h3>
                 </div>
                 <div class="col-10 col-md-4 mx-auto text-center p-0" id="contactForm">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
@@ -227,8 +248,8 @@
     <div class="row fixed-bottom">
         <div class="col-11"></div>
         <div class="col float-end">
-            <a class="btn js-scroll-to-top btn-lg" style="bottom:25px">
-                <i class="fa fa-arrow-up text-dark bg-white rounded"></i>
+            <a href="#top" class="btn btn-lg" id="toTop" style="bottom:25px">
+                <i class="fa fa-arrow-up rounded"></i>
             </a>
         </div>
     </div>
@@ -252,6 +273,9 @@
                     <p>
                         &#169; Bookkeeping That's Reliable, LLC 2021
                     </p>
+                    <p class="mt-3" id="dev-credit">Site developed by <span style="font-family: 'Lobster', cursive;"
+                            id="dev-name"><a href="https://bastanley.webflow.io/" target="_blank">
+                                Bethany Stanley</a></span></p>
                 </div>
                 <div class="col text-center text-white">
                     <ul class="navbar-nav" id="footer-nav">
@@ -276,35 +300,32 @@
 
             </div>
             <div class="row">
-                <div class="col-12 text-center text-white" id="dev-credit">
-                    <p class="mt-3">Site developed by <span style="font-family: 'Lobster', cursive;" id="dev-name"><a
-                                href="https://bastanley.webflow.io/" target="_blank">
-                                Bethany Stanley</a></span>
-                    </p>
+                <div class="col-12 text-center text-white">
+
                 </div>
             </div>
         </div>
     </footer>
-    <script src="zenscroll-min.js"></script>
-    <script src=" node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jQuery.scrollSpeed.js"></script>
+    <script src="jQuery-inView.min.js"></script>
+
+
     <script>
-
+        // tabs
+        $(function () {
+            $('#myList a:last-child').tab('show')
+        })
+        //smooth scroll on nav links only
+        $('#navLink a').smoothScroll();
         // Scroll to top button
-        document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('details').scrollIntoView({ behavior: 'smooth' });
-        });
-        var about = document.getElementById("services")
-        zenscroll.to(services)
+        $('#toTop a').smoothScroll();
+        //slow down scroll for whole page
+        jQuery.scrollSpeed(100, 800);
 
-        var about = document.getElementById("about")
-        zenscroll.to(about)
-
-        var about = document.getElementById("contact")
-        zenscroll.to(contact)
     </script>
 </body>
 
