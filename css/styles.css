@@ -30,6 +30,11 @@ a:visited {
   text-decoration: none;
 }
 
+.btn-purp {
+  background-color: rgb(225, 214, 243);
+  border: 1px solid rgb(225, 214, 243);
+}
+
 /* Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
@@ -146,11 +151,34 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 770px) {
+  #ab-1,
+  #ab-2,
+  #ab-3 {
+    opacity: 1;
+    cursor: pointer;
+  }
+  #ab-1:hover,
+  #ab-2:hover,
+  #ab-3:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
 /* Contact Section */
 
 #contact {
   margin-top: 40px;
   margin-bottom: 50px;
+}
+
+#phoneNum {
+  color: rgba(15, 14, 14, 0.459);
+}
+
+#phoneNum:hover {
+  color: rgba(78, 49, 128, 1);
 }
 
 @media screen and (min-width: 770px) {
