@@ -15,7 +15,8 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Bookkeeping That's Reliable!</title>
 </head>
@@ -26,14 +27,13 @@
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark" id="nav-bar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/reliablebookkeepinglogocrop.png"
-                    class="img-fluid logo-img" />
+            <a class="navbar-brand" href="#"><img src="img/finallogohor.png" class="img-fluid logo-img" />
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">
                             Home</a>
@@ -60,12 +60,12 @@
         <div class="main container-fluid">
 
             <!--Banner section-->
-            <section class="row jumbotron jumbotron-fluid p-0 mb-0">
+            <section class="row jumbotron jumbotron-fluid p-0 my-0">
                 <div class="banner">
-                    <div class="col banner-inner p-4">
-                        Something to catch the eye here, like testimonials, marketing
-                        things that make your service stand out.
-                        Perhaps something like "Quickbook Certified!"
+                    <div class="col banner-inner rounded p-4 text-center">
+                        <p style="font-size:28px;font-weight:800">
+                            Bringing Quickbooks&#174; Certified service <br />to all areas in Idaho!
+                        </p>
                     </div>
                 </div>
             </section>
@@ -75,30 +75,137 @@
             <section class="row row-content p-3" id="services">
                 <div class="col-12 text-center my-3">
                     <h2>Services</h2>
+                    <hr />
                     <h3>What We Can Do For You</h3>
                 </div>
-                <div class="col" style="height:250px">
-                    Section outlining services
+                <!-- List group -->
+                <div class="row mx-auto" id="servicesTabs">
 
+                    <div class="col-xs-12 col-md">
+                        <div class="list-group" id="myList" role="tablist">
+                            <a class="list-group-item list-group-item-action active noZensmooth" data-toggle="list"
+                                href="#taxes" role="tab">Taxes</a>
+                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
+                                href="#quickbooks" role="tab">Quickbooks</a>
+                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
+                                href="#maintenance" role="tab">Maintenance</a>
+                            <a class="list-group-item list-group-item-action noZensmooth" data-toggle="list"
+                                href="#business" role="tab">General Business</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="col-xs-12 col-md mt-2">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="taxes" role="tabpanel">
+                                <ul>
+                                    <li>Federal and state filing reports</li>
+                                    <li>Tax returns for personal and business preparation</li>
+                                    <li>Payroll Processing with Tax reporting 941, 940, W-2’s, W-3,
+                                        Processing 1099’s and l096.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="quickbooks" role="tabpanel">
+                                <ul>
+                                    <li>New QuickBooks company file setup</li>
+                                    <li>Online QuickBooks</li>
+                                    <li>Quickbooks certified service!</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="maintenance" role="tabpanel">
+                                <ul>
+                                    <li>Cleanup of your bookkeeping</li>
+                                    <li>Monthly Maintenance</li>
+                                    <li>Monthly Bank/Credit Card Reconciliations</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="business" role="tabpanel">
+                                <ul>
+                                    <li>Payroll calculation</li>
+                                    <li>Asset Management (Accumulated Depreciation)</li>
+                                    <li>Prepare Financial Statements Income Statement, Balance Sheet Monthly, Quarterly,
+                                        and
+                                        Year-end reporting</li>
+                                    <li>Assist with new company set up and filing</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('#myList a:last-child').tab('show')
+                        })
+                    </script>
                 </div>
             </section>
 
             <!--About section-->
-            <section class="row row-content p-3" id="about">
+            <section class="row row-content p-3 pb-5" id="about">
                 <div class="col-12 text-center my-3">
-                    <h2>Meet Ingrid</h2>
-                    <h3>Quickbooks-certified, kind, and conscientious</h3>
+                    <h2>About BTR</h2>
+                    <hr />
+                    <h3 class="text-center">BTR values your financial success</h3>
                 </div>
-                <div class="col" style="height:250px">
-                    Section with a little about Ingrid as a human
-                    and a professional.
+                <div class="row mx-auto" id="about-content">
+                    <div class="col-md-8 col-lg-5 col-xl-4 mx-auto" id="about-boxes">
+                        <div class="bg-light rounded p-3 mb-4 text-right" id="ab-1">
+                            <div class="media">
+                                <i class="fa fa-calendar"> </i>
+                                <div class="media-body">
+                                    <p>Provide monthly bookkeeping cleanup, and payroll
+                                        services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded p-3 mb-4 text-left" id="ab-2">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p>Small business owners using BTR's service average about 60 hours per year by
+                                        streamlining
+                                        their
+                                        bookkeeping. So they have more time
+                                        to work on their profession.
+                                    </p>
+                                </div>
+                                <i class="fa fa-check"> </i>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded p-3 mb-4 text-right" id="ab-3">
+                            <div class="media">
+                                <i class="fa fa-money"> </i>
+                                <div class="media-body ml-2">
+                                    <p>Customers increase profit by average of $5000 per year or
+                                        more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-2 mr-auto">
+                        <div class="card mt-3">
+                            <img src="img/ingrid.jpg" class="img-thumbnail card-img-top" alt="Picture of Ingrid" />
+                            <h3 class="card-header">Ingrid</h3>
+                            <div class="card-body">
+                                I have been doing bookkeeping for over 20 years in my own businesses. I am a Certified
+                                by Quickbooks. I work will all
+                                different agencies across the country and can provide the training you need to keep
+                                things organized.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!--Contact Section-->
             <section class="row row-content p-3" id="contact">
-                <div class="col-12 my-3">
+                <div class="col-12 my-3 mx-auto">
                     <h2 class="text-center">Interested in getting your company or personal finances in order?</h2>
+                    <hr />
                     <h3 class="text-center">Use the form below to contact us!</h3>
                 </div>
                 <div class="col-10 col-md-4 mx-auto text-center p-0" id="contactForm">
@@ -112,101 +219,93 @@
                     </script>
                 </div>
             </section>
-            <!--End of main container-->
+
         </div>
+        <!--End of main container-->
     </main>
     <!--Scroll to top button-->
     <div class="row fixed-bottom">
         <div class="col-11"></div>
         <div class="col float-end">
             <a class="btn js-scroll-to-top btn-lg" style="bottom:25px">
-                <i class="fa fa-arrow-up"></i>
+                <i class="fa fa-arrow-up text-dark bg-white rounded"></i>
             </a>
         </div>
     </div>
-</body>
-<footer class="site-footer p-0">
-    <div class="container-fluid">
-        <div class="row row-content p-3">
-            <div class="col-md-6 text-white text-center">
-                <h5 style="font-family: 'Bodoni Moda', serif; ">Let's Connect!</h5>
-                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/">
-                    <i class="fa fa-instagram"> </i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/">
-                    <i class="fa fa-facebook"> </i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
-                    <i class="fa fa-twitter"> </i></a>
-                <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
-                    <i class="fa fa-youtube"> </i></a>
-            </div>
+    <!--Footer-->
+    <footer class="site-footer pt-3">
+        <div class="container-fluid">
+            <div class="row row-content p-3">
+                <div class="col my-auto text-white text-center">
+                    <h5 style="font-family: 'Bodoni Moda', serif; ">Let's Connect!</h5>
+                    <a class="btn btn-social-icon btn-instagram text-light" href="http://instagram.com/">
+                        <i class="fa fa-instagram"> </i></a>
+                    <a class="btn btn-social-icon btn-facebook text-light" href="http://facebook.com/">
+                        <i class="fa fa-facebook"> </i></a>
+                    <a class="btn btn-social-icon btn-twitter text-light" href="http://twitter.com/">
+                        <i class="fa fa-twitter"> </i></a>
+                    <a class="btn btn-social-icon btn-google text-light" href="http://youtube.com/">
+                        <i class="fa fa-youtube"> </i></a>
+                    <br />
+                    <br />
+                    <br />
+                    <p>
+                        &#169; Bookkeeping That's Reliable, LLC 2021
+                    </p>
+                </div>
+                <div class="col text-center text-white">
+                    <ul class="navbar-nav" id="footer-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#top">
+                                Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">
+                                Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="col-md-6 text-center text-white mt-2">
-                <ul class="navbar-nav" id="footer-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#top">
-                            Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">
-                            Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            Contact</a>
-                    </li>
-                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center text-white" id="dev-credit">
+                    <p class="mt-3">Site developed by <span style="font-family: 'Lobster', cursive;" id="dev-name"><a
+                                href="https://bastanley.webflow.io/" target="_blank">
+                                Bethany Stanley</a></span>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center text-white" id="dev-credit">
-                <p class="mt-3">Site developed by <span style="font-family: 'Lobster', cursive;" id="dev-name"><a
-                            href="https://bastanley.webflow.io/" target="_blank">
-                            Bethany Stanley</a></span>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src=" node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--Smooth scroll on all devices-->
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on('click', function (event) {
+    </footer>
+    <script src="zenscroll-min.js"></script>
+    <script src=" node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
+        // Scroll to top button
+        document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('details').scrollIntoView({ behavior: 'smooth' });
         });
-    });
-    // Scroll to top button
-    document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector('details').scrollIntoView({ behavior: 'smooth' });
-    });
+        var about = document.getElementById("services")
+        zenscroll.to(services)
 
-</script>
+        var about = document.getElementById("about")
+        zenscroll.to(about)
+
+        var about = document.getElementById("contact")
+        zenscroll.to(contact)
+    </script>
+</body>
 
 </html>
