@@ -76,13 +76,29 @@ header {
   background-image: url("/img/pexels-karolina-grabowska-4476375.jpg");
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 99;
+}
+
+@media screen and (min-width: 770px) {
+  .banner,
+  .jumbotron {
+    background-image: url("/img/pexels-karolina-grabowska-4476375.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 99;
+  }
 }
 
 .banner-inner {
