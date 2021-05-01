@@ -74,10 +74,11 @@ header {
 
 .banner,
 .jumbotron {
-  background-image: url("/img/pexels-karolina-grabowska-4476375.jpg");
+  background-image: url("/img/mobilejumbotronbg.jpg");
   background-position: center;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 300px;
   display: flex;
   align-items: center;
