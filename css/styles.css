@@ -77,7 +77,7 @@ header {
   background-image: url("/img/mobilejumbotronbg.jpg");
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 300px;
   display: flex;
