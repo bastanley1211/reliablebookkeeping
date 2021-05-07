@@ -4,7 +4,14 @@ body {
   width: 100%;
   font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 770px) {
+  body,
+  html {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 h1 {
