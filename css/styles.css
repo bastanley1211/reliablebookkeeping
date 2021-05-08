@@ -6,14 +6,6 @@ body {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 770px) {
-  body,
-  html {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
 h1 {
   font-family: "Rufina", serif;
 }

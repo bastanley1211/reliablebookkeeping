@@ -321,9 +321,8 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19933996.js"></script>
     <!-- End of HubSpot Embed Code -->
-
-
     <script>
+        import smoothscroll from 'smoothscroll-polyfill';
         // tabs
         $(function () {
             $('#myList a:last-child').tab('show')
@@ -334,6 +333,9 @@
         $('#toTop a').smoothScroll();
         //slow down scroll for whole page
         jQuery.scrollSpeed(100, 800);
+
+        // kick off the polyfill!
+        smoothscroll.polyfill();
 
     </script>
 </body>
