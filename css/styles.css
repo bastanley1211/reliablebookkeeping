@@ -84,6 +84,7 @@ header {
   justify-content: center;
   position: relative;
   z-index: 99;
+  background-color: black;
 }
 
 @media screen and (min-width: 770px) {
