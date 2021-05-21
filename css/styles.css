@@ -73,10 +73,10 @@ header {
 
 .banner,
 .jumbotron {
-  background-image: url("/img/mobilejumbotronbg.jpg");
+  background-image: url("/img/altjumbotronphotoIDAHO.jpg");
   background-position: center;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
   display: flex;
@@ -84,17 +84,17 @@ header {
   justify-content: center;
   position: relative;
   z-index: 99;
-  background-color: black;
+  background-color: transparent;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .banner,
   .jumbotron {
-    background-image: url("/img/pexels-karolina-grabowska-4476375.jpg");
-    background-position: center;
+    background-image: url("/img/altjumbotronphotoIDAHO.jpg");
+    background-position: top center;
     background-attachment: fixed;
     background-size: cover;
-    height: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
